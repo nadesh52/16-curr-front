@@ -1,11 +1,11 @@
 
-name: Build PROD ON PREM
+name: Build dev
 
 on:
   workflow_dispatch: {}
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build:
