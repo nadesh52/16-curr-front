@@ -2,10 +2,11 @@
 name: Build main
 
 on:
-  workflow_dispatch: {}
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Repository branch or tag'
+        required: true
 
 jobs:
   build:
