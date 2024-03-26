@@ -1,4 +1,3 @@
-
 name: Build main
 
 on:
@@ -21,4 +20,4 @@ jobs:
           node-version: 18.12.0
 
       - name: install dependencies
-        uses: npm install
+        run: npm install
